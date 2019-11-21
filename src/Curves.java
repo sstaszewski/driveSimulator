@@ -1,8 +1,13 @@
 public enum Curves {
-    STRAIGHT(1),DEGREES30(2),DEGREES60(3),DEGREES90(4), DEGREES180(5);
+    STRAIGHT("Straight", 1, 1),DEGREES30("30 degrees", 1, 0.9),DEGREES60("60 degrees", 1, 0.7),DEGREES90("90 degrees"
+            , 1, 0.5), DEGREES180("'U'-turn", 1, 0.2);
+    private String name;
+    private double lenght;
+    private double speedLossParameter;
 
-    private int code;
-    Curves(int code){
-        this.code = code;
+    Curves(String name, double lenght, double speedLossParameter) {
+        this.name = name;
+        this.lenght = lenght;
+        this.speedLossParameter = speedLossParameter;
     }
 }

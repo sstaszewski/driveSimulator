@@ -1,8 +1,13 @@
 public enum DriverList {
-    NOOB(1), AMATEUR(2), SKILLED(3), PRO(4), JESUSTAKESTHEWHEEL(5);
-    private int code;
+    NOOB("Noob", 0.7), AMATEUR("Amateur", 0.8), SKILLED("Skilled", 0.9), PRO("Pro", 0.95), JESUSTAKESTHEWHEEL(
+            "God himself", 1);
 
-    DriverList(int code) {
-        this.code = code;
+    private String nickname;
+    private double skillLevel;
+
+    DriverList(String nickname, double skillLevel) {
+        this.nickname = nickname;
+        this.skillLevel = skillLevel;
     }
+
 }
