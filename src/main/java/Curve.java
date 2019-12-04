@@ -6,7 +6,7 @@ public class Curve {
     private List<Curve> curves;
 
     public Curve() {
-        curves = new LinkedList<>();
+        curves = new LinkedList();
     }
 
     public void addCurve(Curve curve) {

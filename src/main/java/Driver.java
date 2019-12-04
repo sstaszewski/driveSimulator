@@ -6,7 +6,7 @@ public class Driver {
     private List<Driver> drivers;
 
     public Driver() {
-        drivers = new LinkedList<>();
+        drivers = new LinkedList();
     }
 
     public void addDriver(Driver driver) {
