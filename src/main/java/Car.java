@@ -21,6 +21,4 @@ public class Car {
         cars.remove(car);
     }
 
-
-
 }
