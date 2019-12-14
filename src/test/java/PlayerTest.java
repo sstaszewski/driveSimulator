@@ -35,6 +35,6 @@ class PlayerTest {
     @Test
     void name01() {
         UI ui = new UI(new SelectionServiceImpl(), new SelectionServiceImpl(), new GameEngine());
-        ui.firstChoice();
+        ui.play();
     }
 }

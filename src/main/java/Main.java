@@ -4,9 +4,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-        UI ui = new UI(new SelectionServiceImpl(), new SelectionServiceImpl(), new GameEngine());
-        ui.firstChoice();
+        SelectionServiceImpl selectionService = new SelectionServiceImpl();
+        UI ui = new UI(selectionService, selectionService, new GameEngine());
+        ui.play();
 
         Player player = new Player("sadasd", Car.MALUCH, SkillLevel.AMATEUR);
 

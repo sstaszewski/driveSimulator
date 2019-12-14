@@ -1,8 +1,12 @@
+import java.time.Duration;
+import java.util.Random;
 import java.util.Scanner;
 
 public class UI {
+    public static final int MAX_SEGMENTS = 40;
     private final RandomSkillGenerator randomSkillGenerator;
     private final RandomCarGenerator randomCarGenerator;
+
     private final GameEngine gameEngine;
 
     public UI(RandomSkillGenerator randomSkillGenerator, RandomCarGenerator randomCarGenerator, GameEngine gameEngine) {
@@ -11,7 +15,7 @@ public class UI {
         this.gameEngine = gameEngine;
     }
 
-    public void firstChoice() {
+    public void play() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wolisz wybrać, czy grać losowo?");
 
@@ -20,16 +24,19 @@ public class UI {
         int choosenOption = scanner.nextInt();
         switch (choosenOption) {
             case (1):
-                //wybieranie dupereli
-//                driverSelection(); //cos tu zjebalem
-//                carSelection(); //tu tez, ten sam blad
-//                trackLengthSelection();
+                SkillLevel selectedSkill = UiSelections.skillSelection();
+                Car selectedCar = UiSelections.carSelection();
+                final Player player = new Player("asd", selectedCar, selectedSkill);
+                int segmentsCount = new Random().nextInt(MAX_SEGMENTS);
+                final Duration durationOfTrack = gameEngine.measureTime(player, new Random().nextInt(MAX_SEGMENTS));
+                System.out.println("Trasa przebyta w " + durationOfTrack.getSeconds());
                 break;
             case (2):
-                SkillLevel skillLevel = randomSkillGenerator.randomSkillLevel();
-                Car car = randomCarGenerator.randomCarGenerator();
-                Player player = new Player("asd",car,skillLevel);
-                System.out.println(gameEngine.measureTime(player, 10));
+                final SkillLevel skillLevel = randomSkillGenerator.randomSkillLevel();
+                final Car car = randomCarGenerator.randomCarGenerator();
+                final Player randomizedPlayer = new Player("asd", car, skillLevel);
+                final Duration durationOfRandomTrack = gameEngine.measureTime(randomizedPlayer, new Random().nextInt(MAX_SEGMENTS));
+                System.out.println("Trasa przebyta w " + durationOfRandomTrack.getSeconds());
                 break;
             default:
                 System.out.println("No coś ci chyba nie wyszło, spróbuj jeszcze raz.");
