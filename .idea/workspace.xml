@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4e0046d-07af-4674-8ab5-40268a7436ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TrackGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/driveSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/driveSimulator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CarList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Curve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Curve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CurvesList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkillLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,22 +158,22 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="692" y="135" width="750" height="594" key="#xdebugger.evaluate/78.0.1458.864@78.0.1458.864" timestamp="1576356524172" />
-    <state width="1415" height="240" key="GridCell.Tab.0.bottom" timestamp="1576357256830">
+    <state width="1415" height="190" key="GridCell.Tab.0.bottom" timestamp="1576357385463">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="240" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1576357256830" />
-    <state width="1415" height="240" key="GridCell.Tab.0.center" timestamp="1576357256830">
+    <state width="1415" height="190" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
+    <state width="1415" height="190" key="GridCell.Tab.0.center" timestamp="1576357385463">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="240" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1576357256830" />
-    <state width="1415" height="240" key="GridCell.Tab.0.left" timestamp="1576357256830">
+    <state width="1415" height="190" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
+    <state width="1415" height="190" key="GridCell.Tab.0.left" timestamp="1576357385463">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="240" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1576357256830" />
-    <state width="1415" height="240" key="GridCell.Tab.0.right" timestamp="1576357256830">
+    <state width="1415" height="190" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
+    <state width="1415" height="190" key="GridCell.Tab.0.right" timestamp="1576357385463">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="240" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1576357256830" />
+    <state width="1415" height="190" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
     <state width="1415" height="290" key="GridCell.Tab.1.bottom" timestamp="1576356894537">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
