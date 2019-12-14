@@ -1,5 +1,5 @@
 public enum Car {
-    MALUCH("Maluch", 100, 20), MUSTANG("Mustang", 250, 50), ENZO("Enzo", 320, 70);
+    MALUCH("Maluch", 28, 5.5), MUSTANG("Mustang", 70, 14), ENZO("Enzo", 90, 19.5);
 
     private String name;
     private double topSpeed;
@@ -15,23 +15,11 @@ public enum Car {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getTopSpeed() {
         return topSpeed;
     }
 
-    public void setTopSpeed(double topSpeed) {
-        this.topSpeed = topSpeed;
-    }
-
     public double getAcceleration() {
         return acceleration;
-    }
-
-    public void setAcceleration(double acceleration) {
-        this.acceleration = acceleration;
     }
 }

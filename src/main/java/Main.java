@@ -4,6 +4,10 @@ public class Main {
 
 
     public static void main(String[] args) {
+
+        UI ui = new UI(new SelectionServiceImpl(), new SelectionServiceImpl(), new GameEngine());
+        ui.firstChoice();
+
         Player player = new Player("sadasd", Car.MALUCH, SkillLevel.AMATEUR);
 
         EnumMap<Car, Integer> carListEnumMap = new EnumMap<Car, Integer>(Car.class);

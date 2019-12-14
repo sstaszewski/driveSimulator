@@ -1,46 +1,19 @@
-public class SelectionServiceImpl implements SelectionService {
-    public SelectionServiceImpl() {
+import java.util.Random;
+
+public class SelectionServiceImpl implements RandomCarGenerator, RandomSkillGenerator {
+    @Override
+    public SkillLevel randomSkillLevel() {
+        Random random = new Random();
+        int randomValue = random.nextInt(SkillLevel.values().length);
+        return SkillLevel.values()[randomValue];
     }
 
-    public void randomDriverGenerator(SkillLevel skillLevel, Driver driver) {
-        double randomDouble = Math.random();
-        randomDouble = randomDouble * skillLevel.ordinal() + 1;
-        int randomDriverId = (int) randomDouble;
-        // przyrownac id w enumie do wylosowanego id
-        for (int i = 0; i <= skillLevel.ordinal()+1; i++) {
-            if (i == randomDriverId) {
-                Driver driver1;
-            }
-        }
+    @Override
+    public Car randomCarGenerator() {
+        Random random = new Random();
+        int randomValue = random.nextInt(Car.values().length);
+        return Car.values()[randomValue];
     }
 
-    public void randomCarGenerator(Car carList, Car car) {
-        double randomDouble = Math.random();
-        randomDouble = randomDouble * carList.ordinal() + 1;
-        int randomCarId = (int) randomDouble;
-        for (int i = 0; i < carList.ordinal(); i++) {
-            if(i==randomCarId){
-                Car car1;
-            }
-        }
-    }
-
-    public void randomCurveGenerator(Curve curvesList, Curve curve) {
-        double randomDouble = Math.random();
-        randomDouble = randomDouble * curvesList.ordinal() + 1;
-        int randomCurveId = (int) randomDouble;
-        for (int i = 0; i < curvesList.ordinal(); i++) {
-            if(i==randomCurveId){
-                Curve curve1;
-            }
-        }
-    }
-
-
-    //
-    //    @Override
-    //    public void selectDriver(String nickname, double skillLevel){
-    //        this.selectDriver("das",2.3);
-    //    }
 
 }

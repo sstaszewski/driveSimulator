@@ -1,3 +1,4 @@
+import java.time.Duration;
 import java.util.Queue;
 
 public class Player {
@@ -29,7 +30,7 @@ public class Player {
         return temporaryAcceleration;
     }
 
-    public long measureTimeOn(Queue<Curve> generatedTrack) {
+    public Duration measureTimeOn(Queue<Curve> generatedTrack) {
 
         long totalTime = 0;
         double currentSpeed = 0;
@@ -39,7 +40,7 @@ public class Player {
             currentSpeed = ensureThatTopSpeedNotExided(currentSpeed);
             totalTime = totalTime + (long) (currentCurve.getLength() / currentSpeed);
         }
-        return totalTime;
+        return Duration.ofSeconds(totalTime);
     }
 
     public double ensureThatTopSpeedNotExided(double averageSpeed) {

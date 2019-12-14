@@ -14,15 +14,7 @@ public enum SkillLevel {
         return nickname;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
     public double getSkillLevel() {
         return skillLevel;
-    }
-
-    public void setSkillLevel(double skillLevel) {
-        this.skillLevel = skillLevel;
     }
 }

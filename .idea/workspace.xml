@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4e0046d-07af-4674-8ab5-40268a7436ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GameEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RandomCarGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RandomSkillGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Curve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Curve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SkillLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkillLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Curve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Curve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -56,6 +72,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575498668170" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -72,9 +89,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
-    <configuration name="PlayerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="driveSimulator" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +116,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest.name01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="driveSimulator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="name01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.powinienZwrocicCzasDlaTrasy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="driveSimulator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="METHOD_NAME" value="powinienZwrocicCzasDlaTrasy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PlayerTest.name01" />
+        <item itemvalue="JUnit.PlayerTest.powinienZwrocicCzasDlaTrasy" />
         <item itemvalue="JUnit.PlayerTest.name" />
-        <item itemvalue="Application.PlayerTest" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +169,14 @@
       <option name="presentableId" value="Default" />
       <updated>1574088167155</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create .gitignore file and add to it typical folders">
+      <created>1576357652856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576357652856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -141,7 +188,15 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create .gitignore file and add to it typical folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create .gitignore file and add to it typical folders" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1124" y="429" key="#com.intellij.ide.util.MemberChooser" timestamp="1576361887418">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="1124" y="429" key="#com.intellij.ide.util.MemberChooser/78.0.2482.1440@78.0.2482.1440" timestamp="1576361887418" />
     <state x="677" y="627" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576347582435">
       <screen x="78" y="0" width="2482" height="1440" />
     </state>
@@ -150,63 +205,85 @@
       <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state x="972" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/78.0.2482.1440@78.0.2482.1440" timestamp="1576351938005" />
-    <state x="1049" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576351912795">
+    <state x="1049" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576362047782">
       <screen x="78" y="0" width="2482" height="1440" />
     </state>
-    <state x="1049" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/78.0.2482.1440@78.0.2482.1440" timestamp="1576351912795" />
-    <state x="692" y="135" width="750" height="594" key="#xdebugger.evaluate" timestamp="1576356524172">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state x="1049" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/78.0.2482.1440@78.0.2482.1440" timestamp="1576362047782" />
+    <state x="1123" y="225" width="750" height="594" key="#xdebugger.evaluate" timestamp="1576360034939">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state x="692" y="135" width="750" height="594" key="#xdebugger.evaluate/78.0.1458.864@78.0.1458.864" timestamp="1576356524172" />
-    <state width="1415" height="190" key="GridCell.Tab.0.bottom" timestamp="1576357385463">
+    <state x="1123" y="225" key="#xdebugger.evaluate/78.0.2482.1440@78.0.2482.1440" timestamp="1576360034939" />
+    <state x="463" y="26" key="CommitChangelistDialog2" timestamp="1576357651757">
       <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="463" y="26" key="CommitChangelistDialog2/78.0.1458.864@78.0.1458.864" timestamp="1576357651757" />
+    <state width="2439" height="344" key="GridCell.Tab.0.bottom" timestamp="1576362801510">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="190" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
-    <state width="1415" height="190" key="GridCell.Tab.0.center" timestamp="1576357385463">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="344" key="GridCell.Tab.0.bottom/78.0.2482.1440@78.0.2482.1440" timestamp="1576362801510" />
+    <state width="2439" height="344" key="GridCell.Tab.0.center" timestamp="1576362801510">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="190" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
-    <state width="1415" height="190" key="GridCell.Tab.0.left" timestamp="1576357385463">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="344" key="GridCell.Tab.0.center/78.0.2482.1440@78.0.2482.1440" timestamp="1576362801510" />
+    <state width="2439" height="344" key="GridCell.Tab.0.left" timestamp="1576362801509">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="190" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
-    <state width="1415" height="190" key="GridCell.Tab.0.right" timestamp="1576357385463">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="344" key="GridCell.Tab.0.left/78.0.2482.1440@78.0.2482.1440" timestamp="1576362801509" />
+    <state width="2439" height="344" key="GridCell.Tab.0.right" timestamp="1576362801510">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="190" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1576357385463" />
-    <state width="1415" height="290" key="GridCell.Tab.1.bottom" timestamp="1576356894537">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="344" key="GridCell.Tab.0.right/78.0.2482.1440@78.0.2482.1440" timestamp="1576362801510" />
+    <state width="2439" height="515" key="GridCell.Tab.1.bottom" timestamp="1576360149457">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="290" key="GridCell.Tab.1.bottom/78.0.1458.864@78.0.1458.864" timestamp="1576356894537" />
-    <state width="1415" height="290" key="GridCell.Tab.1.center" timestamp="1576356894536">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="515" key="GridCell.Tab.1.bottom/78.0.2482.1440@78.0.2482.1440" timestamp="1576360149457" />
+    <state width="2439" height="515" key="GridCell.Tab.1.center" timestamp="1576360149457">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="290" key="GridCell.Tab.1.center/78.0.1458.864@78.0.1458.864" timestamp="1576356894536" />
-    <state width="1415" height="290" key="GridCell.Tab.1.left" timestamp="1576356894536">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="515" key="GridCell.Tab.1.center/78.0.2482.1440@78.0.2482.1440" timestamp="1576360149457" />
+    <state width="2439" height="515" key="GridCell.Tab.1.left" timestamp="1576360149457">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="290" key="GridCell.Tab.1.left/78.0.1458.864@78.0.1458.864" timestamp="1576356894536" />
-    <state width="1415" height="290" key="GridCell.Tab.1.right" timestamp="1576356894536">
-      <screen x="78" y="0" width="1458" height="864" />
+    <state width="2439" height="515" key="GridCell.Tab.1.left/78.0.2482.1440@78.0.2482.1440" timestamp="1576360149457" />
+    <state width="2439" height="515" key="GridCell.Tab.1.right" timestamp="1576360149457">
+      <screen x="78" y="0" width="2482" height="1440" />
     </state>
     <state width="1415" height="290" key="GridCell.Tab.1.right/78.0.1458.864@78.0.1458.864" timestamp="1576356894536" />
+    <state width="2439" height="515" key="GridCell.Tab.1.right/78.0.2482.1440@78.0.2482.1440" timestamp="1576360149457" />
     <state x="226" y="13" key="SettingsEditor" timestamp="1576355695536">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="226" y="13" key="SettingsEditor/78.0.1458.864@78.0.1458.864" timestamp="1576355695536" />
     <state x="330" y="381" key="SettingsEditor/78.0.2482.1440@78.0.2482.1440" timestamp="1576347569124" />
-    <state x="448" y="43" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576354667051">
+    <state x="400" y="165" key="Vcs.Push.Dialog.v2" timestamp="1576357655200">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
+    <state x="400" y="165" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1576357655200" />
+    <state x="708" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576361284987">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
     <state x="448" y="43" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/78.0.1458.864@78.0.1458.864" timestamp="1576354667051" />
+    <state x="708" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/78.0.2482.1440@78.0.2482.1440" timestamp="1576361284987" />
     <state x="617" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576355589670">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="617" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/78.0.1458.864@78.0.1458.864" timestamp="1576355589670" />
-    <state x="1090" y="422" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576348568742">
+    <state x="1090" y="422" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576360620173">
       <screen x="78" y="0" width="2482" height="1440" />
     </state>
-    <state x="1090" y="422" key="com.intellij.testIntegration.createTest.CreateTestDialog/78.0.2482.1440@78.0.2482.1440" timestamp="1576348568742" />
+    <state x="1090" y="422" key="com.intellij.testIntegration.createTest.CreateTestDialog/78.0.2482.1440@78.0.2482.1440" timestamp="1576360620173" />
+    <state x="1049" y="475" width="540" height="499" key="extract.method.dialog" timestamp="1576361777231">
+      <screen x="78" y="0" width="2482" height="1440" />
+    </state>
+    <state x="1049" y="475" width="540" height="499" key="extract.method.dialog/78.0.2482.1440@78.0.2482.1440" timestamp="1576361777231" />
     <state width="722" height="338" key="javadoc.popup.new" timestamp="1576357103580">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
@@ -216,21 +293,5 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="464" y="197" key="run.anything.popup/78.0.1458.864@78.0.1458.864" timestamp="1576354550878" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Player.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Player.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
