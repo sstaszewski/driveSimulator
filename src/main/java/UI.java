@@ -12,9 +12,9 @@ public class UI {
         switch (choosenOption) {
             case (1):
                 //wybieranie dupereli
-                driverSelection(); //cos tu zjebalem
-                carSelection(); //tu tez, ten sam blad
-                trackLengthSelection();
+//                driverSelection(); //cos tu zjebalem
+//                carSelection(); //tu tez, ten sam blad
+//                trackLengthSelection();
                 break;
             case (2):
                 //odpalenie rng
@@ -24,20 +24,20 @@ public class UI {
         }
     }
 
-    public void driverSelection(DriverList driverList, Driver driver) {
+    public void driverSelection(SkillLevel skillLevel, Driver driver) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wybierz kierowcę:");
-        for (int i = 0; i < driverList.ordinal() + 1; i++) {
-            System.out.println(i + 1 + " - " + driverList.getNickname());//tu na bank nie zadziala
+        for (int i = 0; i < skillLevel.ordinal() + 1; i++) {
+            System.out.println(i + 1 + " - " + skillLevel.getNickname());//tu na bank nie zadziala
         }
         int choosenOption = scanner.nextInt();
-        for (int j = 0; j < driverList.ordinal() + 1; j++){
+        for (int j = 0; j < skillLevel.ordinal() + 1; j++){
             if (j==choosenOption){
                 Driver driver1; //  nie zadziala
             }
         }
     }
-    public void carSelection(CarList carList, Car car) {
+    public void carSelection(Car carList, Car car) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wybierz auto:");
         for (int i = 0; i < carList.ordinal() + 1; i++) {
@@ -51,7 +51,7 @@ public class UI {
         }
     }
 
-    public void trackLengthSelection(CurvesList curvesList, Curve curve){
+    public void trackLengthSelection(Curve curvesList, Curve curve){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Jak długą trasę chcesz jechac?");
         int choosenOption = scanner.nextInt();

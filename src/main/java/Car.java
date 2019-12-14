@@ -1,24 +1,37 @@
-import java.util.LinkedList;
-import java.util.List;
+public enum Car {
+    MALUCH("Maluch", 100, 20), MUSTANG("Mustang", 250, 50), ENZO("Enzo", 320, 70);
 
-public class Car {
+    private String name;
+    private double topSpeed;
+    private double acceleration;
 
-    private List<Car> cars= new LinkedList();
-
-    public List<Car> getCars() {
-        return cars;
+    Car(String name, double topSpeed, double acceleration) {
+        this.name = name;
+        this.topSpeed = topSpeed;
+        this.acceleration = acceleration;
     }
 
-    public void setCars(List<Car> cars) {
-        this.cars = cars;
+    public String getName() {
+        return name;
     }
 
-    public void addCar(Car car){
-        cars.add(car);
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void removeCar(Car car){
-        cars.remove(car);
+    public double getTopSpeed() {
+        return topSpeed;
     }
 
+    public void setTopSpeed(double topSpeed) {
+        this.topSpeed = topSpeed;
+    }
+
+    public double getAcceleration() {
+        return acceleration;
+    }
+
+    public void setAcceleration(double acceleration) {
+        this.acceleration = acceleration;
+    }
 }

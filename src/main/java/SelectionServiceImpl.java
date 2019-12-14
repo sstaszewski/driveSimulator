@@ -2,19 +2,19 @@ public class SelectionServiceImpl implements SelectionService {
     public SelectionServiceImpl() {
     }
 
-    public void randomDriverGenerator(DriverList driverList, Driver driver) {
+    public void randomDriverGenerator(SkillLevel skillLevel, Driver driver) {
         double randomDouble = Math.random();
-        randomDouble = randomDouble * driverList.ordinal() + 1;
+        randomDouble = randomDouble * skillLevel.ordinal() + 1;
         int randomDriverId = (int) randomDouble;
         // przyrownac id w enumie do wylosowanego id
-        for (int i = 0; i <= driverList.ordinal()+1; i++) {
+        for (int i = 0; i <= skillLevel.ordinal()+1; i++) {
             if (i == randomDriverId) {
                 Driver driver1;
             }
         }
     }
 
-    public void randomCarGenerator(CarList carList, Car car) {
+    public void randomCarGenerator(Car carList, Car car) {
         double randomDouble = Math.random();
         randomDouble = randomDouble * carList.ordinal() + 1;
         int randomCarId = (int) randomDouble;
@@ -25,7 +25,7 @@ public class SelectionServiceImpl implements SelectionService {
         }
     }
 
-    public void randomCurveGenerator(CurvesList curvesList, Curve curve) {
+    public void randomCurveGenerator(Curve curvesList, Curve curve) {
         double randomDouble = Math.random();
         randomDouble = randomDouble * curvesList.ordinal() + 1;
         int randomCurveId = (int) randomDouble;

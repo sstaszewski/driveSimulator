@@ -1,19 +1,37 @@
-import java.util.LinkedList;
-import java.util.List;
+public enum Curve {
+    STRAIGHT("Straight", 1, 1),DEGREES30("30 degrees", 1, 0.9),DEGREES60("60 degrees", 1, 0.7),DEGREES90("90 degrees"
+            , 1, 0.5), DEGREES180("'U'-turn", 1, 0.2);
+    private String name;
+    private double length;
+    private double speedLossParameter;
 
-public class Curve {
-
-    private List<Curve> curves;
-
-    public Curve() {
-        curves = new LinkedList();
+    Curve(String name, double length, double speedLossParameter) {
+        this.name = name;
+        this.length = length;
+        this.speedLossParameter = speedLossParameter;
     }
 
-    public void addCurve(Curve curve) {
-        curves.add(curve);
+    public String getName() {
+        return name;
     }
 
-    public void removeCurve(Curve curve){
-        curves.remove(curve);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public double getSpeedLossParameter() {
+        return speedLossParameter;
+    }
+
+    public void setSpeedLossParameter(double speedLossParameter) {
+        this.speedLossParameter = speedLossParameter;
     }
 }

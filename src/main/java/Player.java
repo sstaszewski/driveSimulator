@@ -1,30 +1,27 @@
+import java.util.Queue;
+
 public class Player {
     private String playerName;
-    private CarList car;
-    private DriverList driver;
-    private double currentSpeed;
+    private Car car;
+    private SkillLevel driver;
 
-    public Player(String playerName, CarList car, DriverList driver) {
+    public Player(String playerName, Car car, SkillLevel driver) {
         this.playerName = playerName;
         this.car = car;
         this.driver = driver;
     }
 
 
-
-
-    public Player playerGenerator(Player player, CarList carList, Car car){
-
-
-
+    public Player playerGenerator(Player player, Car carList, Car car) {
         return player;
     }
 
-    public double checkPossibleAcceleration(CarList car) {
+    public double getPossibleAcceleration(Car car, double averageSpeed) {
         double temporaryAcceleration;
-        if (currentSpeed < 0.8 * car.getTopSpeed()) {
+
+        if (averageSpeed < 0.8 * car.getTopSpeed()) {
             temporaryAcceleration = car.getAcceleration() * 0.3;
-        } else if (currentSpeed < 0.5 * car.getTopSpeed()) {
+        } else if (averageSpeed < 0.5 * car.getTopSpeed()) {
             temporaryAcceleration = car.getAcceleration() * 0.7;
         } else {
             temporaryAcceleration = car.getAcceleration();
@@ -32,17 +29,21 @@ public class Player {
         return temporaryAcceleration;
     }
 
-    public double drive(CarList car, CurvesList curvesList, DriverList driver) {
-        currentSpeed =
-                (currentSpeed + checkPossibleAcceleration(car)) * curvesList.getSpeedLossParameter() * driver.getSkillLevel();
+    public long measureTimeOn(Queue<Curve> generatedTrack) {
 
-        return currentSpeed;
+        long totalTime = 0;
+        double currentSpeed = 0;
+        for (Curve currentCurve : generatedTrack) {
+            currentSpeed =
+                    (currentSpeed + getPossibleAcceleration(car, currentSpeed)) * currentCurve.getSpeedLossParameter() * driver.getSkillLevel();
+            currentSpeed = ensureThatTopSpeedNotExided(currentSpeed);
+            totalTime = totalTime + (long) (currentCurve.getLength() / currentSpeed);
+        }
+        return totalTime;
     }
 
-    public void checkSpeed(CarList car) {
-        if (currentSpeed >= car.getTopSpeed()) {
-            currentSpeed = car.getTopSpeed();
-        }       // jaki else?   {currentSpeed = currentSpeed ??
+    public double ensureThatTopSpeedNotExided(double averageSpeed) {
+        return Math.min(averageSpeed, car.getTopSpeed());
     }
 
 }

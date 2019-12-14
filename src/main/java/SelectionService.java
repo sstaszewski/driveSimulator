@@ -1,8 +1,8 @@
 public interface SelectionService {
-    void randomDriverGenerator(DriverList driverList, Driver driver);
+    void randomDriverGenerator(SkillLevel skillLevel, Driver driver);
 
-    void randomCarGenerator(CarList carList, Car car);
+    void randomCarGenerator(Car carList, Car car);
 
-    void randomCurveGenerator(CurvesList curvesList, Curve curve);
+    void randomCurveGenerator(Curve curvesList, Curve curve);
 
 }
